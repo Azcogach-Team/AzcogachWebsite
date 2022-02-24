@@ -1,0 +1,122 @@
+/* Fichier CSS site web Azcogach's Quest */
+
+/* Éléments généraux */
+/* Header */
+#Header
+{
+    border: 2px solid #444;
+    background-color: red;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+/*#HeaderLogo
+{
+    width: 50%;
+}*/
+
+.HeaderElement:nth-child(1)
+{
+    background-color: orange;
+}
+
+.HeaderElement:nth-child(2)
+{
+    background-color: blue;
+
+    display: flex;
+    align-items: center;
+}
+
+.HeaderElement:nth-child(3)
+{
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+
+/* Barre de Navigation */
+#NavBarre
+{
+    display: flex;
+    gap: 13em;
+}
+
+.NavBarreElement
+{
+    list-style-type: none;
+    
+}
+
+/* Footer */
+#Footer
+{
+    border: 2px solid #444;
+    
+    display: flex;
+
+    width: 100%;
+}
+
+
+/* Élément Spécifique "Accueil" */
+/* Body */
+
+/* Trailer */
+#Trailer
+{
+    border: 2px solid #444;
+    
+    display: flex;
+
+    width: 100%;
+}
+
+#Video
+{
+    margin: auto;
+}
+
+/* News */
+#News
+{
+    border: 2px solid #444;
+    
+    display: flex;
+
+    width: 100%;
+}
+
+/* P */
+#P
+{
+    border: 2px solid #444;
+    
+    display: flex;
+
+    width: 100%;
+}
+
+
+/**/
+body 
+{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 0.5em;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 0.5em;
+}

@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
-
         <meta charset="utf-8" />
         <link rel="stylesheet" href="Ressources/style.css"/>
 
         <!-- Title elements -->
         <link rel="icon" href="Ressources/Images/WebSiteIcon.png" type="image/icon type">
         <title>Accueil</title>
-
     </head>
 
     <body>
+        <header id="Header">
+            <div class="HeaderElement">
 
-        <header>
+                <img src="Ressources/Images/LogoProjet.png" alt="Logo" id="HeaderLogo"/>
 
-            <img src="Ressources/Images/LogoProjet.png" alt="Logo" class="logo_nav_bar"/>
+            </div>
 
-            <nav class="menu">
-
+            <div class="HeaderElement">
                 <!-- Menu de navigation -->
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="download.html">Téléchargement</a></li>
-                    <li><a href="about.html">À Propos</a></li>
-                    <li><a href="wiki.html">Wiki</a></li>
+                <ul id="NavBarre">
+                    <li class="NavBarreElement"><a href="index.html">Accueil</a></li>
+                    <li class="NavBarreElement"><a href="download.html">Téléchargement</a></li>
+                    <li class="NavBarreElement"><a href="about.html">À Propos</a></li>
+                    <li class="NavBarreElement"><a href="wiki.html">Wiki</a></li>
                 </ul>
+            </div>
 
-            </nav>
-            
+            <div class="HeaderElement">
+
+                <p>🇫🇷</p>
+                <img src="Ressources/Images/ChangeLang.svg" alt="ChangeLang" id="ChangeLang"/>
+
+            </div>
         </header>
 
         <main>
+            <div id="Trailer">
 
-            Accueil
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Twi92KYddW4" title="Azcogach's Quest Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="Video"></iframe>
 
-            <div is="news">
+            </div>
+
+            <div id="News">
+
+                News
                 
             </div>
 
-            <div is="p">
+            <div id="P">
+
+                Jouer
                 
             </div>
-
         </main>
 
-        <footer>
+        <footer id="Footer">
+
+            Footer
 
         </footer>
-
     </body>
-
 </html>
