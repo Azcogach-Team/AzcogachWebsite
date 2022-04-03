@@ -1,122 +1,130 @@
 /* Fichier CSS site web Azcogach's Quest */
+/* Règles générales */
+html, body 
+{
+    margin: 0;
+    font-family: "Rubik";
+}
 
-/* Éléments généraux */
+.PageBackground
+{
+    background-color: #3A3845;
+    background-image: url(../Ressources/Images/BackgroundPattern.png)
+}
+
+.ForegroundElementBackground
+{
+    background-color: #826F66;
+}
+
+/* Règles Spécifiques */
+.Header, #NavBarre, #Langue, #BandeAnnonce, .Footer, .Credits
+{
+    display: flex;
+}
+
 /* Header */
-#Header
+.Header
 {
-    border: 2px solid #444;
-    background-color: red;
-
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0em 0.5em 1em;
 }
 
-/*#HeaderLogo
+/* Header Logo */
+#PartialLogo
 {
-    width: 50%;
-}*/
-
-.HeaderElement:nth-child(1)
-{
-    background-color: orange;
+    margin-left: -5.25em;
+    margin-bottom: 0.55em;
 }
 
-.HeaderElement:nth-child(2)
+#HeaderLogoBackground 
 {
-    background-color: blue;
-
-    display: flex;
-    align-items: center;
+    height: 7em;
+    width: 7em;
+    background-color: #F7CCAC;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 4em;
+    margin-top: 0.2em;
 }
-
-.HeaderElement:nth-child(3)
-{
-    background-color: green;
-
-    display: flex;
-    align-items: center;
-    gap: 0.3em;
-}
-
 
 /* Barre de Navigation */
 #NavBarre
 {
-    display: flex;
-    gap: 13em;
+    gap: 10em;
+
+    list-style: none;
+}
+
+.NavBarreElement:link
+{
+    text-decoration: none;
 }
 
 .NavBarreElement
 {
-    list-style-type: none;
-    
+    color: #EBFFEB;
+
+    font-weight: 410;
+    font-size: 1.5em;
 }
 
-/* Footer */
-#Footer
+/* Langue */
+#Langue
 {
-    border: 2px solid #444;
-    
-    display: flex;
-
-    width: 100%;
+    gap: 0.3em;
+    margin-right: 2.5em;
 }
 
+#Drapeau
+{
+    width: 2em;
+    height: 2em;
+}
 
-/* Élément Spécifique "Accueil" */
+#Sélecteur
+{
+    width: 1em;
+    height: 2em;
+}
+
 /* Body */
-
-/* Trailer */
-#Trailer
+.MainContent
 {
-    border: 2px solid #444;
-    
     display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
 
-    width: 100%;
+/* Bande Annonce */
+#BandeAnnonce
+{
+    margin-top: 2em;
+    justify-content: center;
 }
 
 #Video
 {
-    margin: auto;
+    filter: drop-shadow(0 0 0.5rem black);
 }
 
-/* News */
-#News
+/* Footer */
+.Footer
 {
-    border: 2px solid #444;
-    
-    display: flex;
-
-    width: 100%;
-}
-
-/* P */
-#P
-{
-    border: 2px solid #444;
-    
-    display: flex;
-
-    width: 100%;
-}
-
-
-/**/
-body 
-{
-    display: flex;
     flex-direction: column;
+    align-items: center;
 
-    row-gap: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0em -0.5em 1em;
 }
 
-main
+.Credits
 {
-    display: flex;
-    flex-direction: column;
+    gap: 0.3em;
+}
 
-    row-gap: 0.5em;
+#Coeur, #Copyright
+{
+    font-family: "Inter";
 }
