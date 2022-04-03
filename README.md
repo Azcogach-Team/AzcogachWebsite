@@ -12,3 +12,9 @@ This repository is the working repository of Azcogach Team on the Azcogach's Que
 
 - 24/02/2022 - 18:04:15 - Platon Neutron:</br>
   - Implementation of flex box sections
+
+- 03/04/2022 - 19:55:46 - Platon Neutron:
+  - Restarting from scratch:
+    - Removing all lines of code
+    - Rewrite a clean idex.html and a clean style.css
+    - Implementing the new design (60% finished)
