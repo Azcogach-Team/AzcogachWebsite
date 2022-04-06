@@ -4,6 +4,7 @@ html, body
 {
     margin: 0;
     font-family: "Rubik";
+    color: #D5E2D0;
 }
 
 .PageBackground
@@ -18,7 +19,7 @@ html, body
 }
 
 /* Règles Spécifiques */
-.Header, #NavBarre, #Langue, #BandeAnnonce, .Footer, .Credits
+.Header, #NavBarre, #Langue, #BandeAnnonce, .Footer, #RS, #Credits, .Credits2
 {
     display: flex;
 }
@@ -53,22 +54,29 @@ html, body
 /* Barre de Navigation */
 #NavBarre
 {
-    gap: 10em;
+    gap: 8em;
 
-    list-style: none;
-}
-
-.NavBarreElement:link
-{
-    text-decoration: none;
-}
-
-.NavBarreElement
-{
-    color: #EBFFEB;
+    /*color: #EBFFEB;*/
 
     font-weight: 410;
     font-size: 1.5em;
+}
+
+/* Lien Barre de Navigation */
+li.NavBarreElement
+{
+    list-style: none;
+}
+
+li.NavBarreElement:hover
+{
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+li.NavBarreElement:active
+{
+    background-color: red;
 }
 
 /* Langue */
@@ -95,19 +103,36 @@ html, body
 {
     display: flex;
     flex-direction: column;
-    gap: 3em;
 }
 
 /* Bande Annonce */
 #BandeAnnonce
 {
-    margin-top: 2em;
+    margin-top: 3em;
     justify-content: center;
 }
 
 #Video
 {
     filter: drop-shadow(0 0 0.5rem black);
+}
+
+/* Nouveauté */
+#Nouveauté
+{
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 2.5em;
+}
+
+/* Jouer */
+#Jouer
+{
+    margin-top: 2.5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em;
 }
 
 /* Footer */
@@ -119,12 +144,50 @@ html, body
     box-shadow: rgba(0, 0, 0, 0.35) 0em -0.5em 1em;
 }
 
-.Credits
+/* Logos */
+#FooterLogo
 {
-    gap: 0.3em;
+    width: 5em;
+    height: auto;
+}
+
+.RSLogo 
+{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#LogoGauche
+{
+    margin-right: 0.5em;
+}
+
+#LogoDroite
+{
+    margin-left: 0.5em;
+}
+
+/* Crédits */
+#Credits
+{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Credits2Top
+{
+    margin-bottom: 0;
+}
+
+.Credits2Bottom
+{
+    margin-top: 0.1em;
 }
 
 #Coeur, #Copyright
 {
     font-family: "Inter";
+    margin-right: 0.3em;
+    margin-left: 0.3em;
 }
