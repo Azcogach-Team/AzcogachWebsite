@@ -19,7 +19,7 @@ html, body
 }
 
 /* Règles Spécifiques */
-.Header, #NavBarre, #Langue, #BandeAnnonce, .Footer, #RS, #Credits, .Credits2
+.Header, #HeaderLogo, #NavBarre, #Langue, #BandeAnnonce, .Footer, #RS, #Credits, .Credits2
 {
     display: flex;
 }
@@ -34,21 +34,26 @@ html, body
 }
 
 /* Header Logo */
+#HeaderLogo
+{
+    align-items: center;
+}
+
 #PartialLogo
 {
-    margin-left: -5.25em;
-    margin-bottom: 0.55em;
+    height: 3.5em;
+    width: auto;
+    margin-left: -2.85em;
 }
 
 #HeaderLogoBackground 
 {
-    height: 7em;
-    width: 7em;
+    height: 4em;
+    width: 4em;
     background-color: #F7CCAC;
     border-radius: 50%;
     display: inline-block;
     margin-left: 4em;
-    margin-top: 0.2em;
 }
 
 /* Barre de Navigation */
@@ -56,27 +61,36 @@ html, body
 {
     gap: 8em;
 
-    /*color: #EBFFEB;*/
+    font-size: 1.4em;
+}
 
-    font-weight: 410;
-    font-size: 1.5em;
+/* Puces éléments Barre de Navigation */
+.NavBarreElement
+{
+    list-style-type: none;
 }
 
 /* Lien Barre de Navigation */
-li.NavBarreElement
+.NavBarreLink:link
 {
-    list-style: none;
+    
+    color: #EBFFEB;
+    text-decoration: none;
 }
 
-li.NavBarreElement:hover
+.NavBarreLink:visited
 {
-    background-color: #fff;
+    color: #EBFFEB;
+}
+
+.NavBarreLink:hover
+{
     text-decoration: underline;
 }
 
-li.NavBarreElement:active
+.NavBarreLink:active
 {
-    background-color: red;
+    color: #3A3845;
 }
 
 /* Langue */
