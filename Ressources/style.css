@@ -10,7 +10,8 @@ html, body
 .PageBackground
 {
     background-color: #3A3845;
-    background-image: url(../Ressources/Images/BackgroundPattern.png)
+    background-image: url(../Ressources/Images/BackgroundPattern.png);
+    background-attachment: fixed;
 }
 
 .ForegroundElementBackground
@@ -19,7 +20,7 @@ html, body
 }
 
 /* Règles Spécifiques */
-.Header, #HeaderLogo, #NavBarre, #Langue, #BandeAnnonce, .Footer, #RS, #Credits, .Credits2
+.Header, #HeaderLogo, #NavBarre, #Langue, #BandeAnnonce, .MainContent, .MainContentDivTitleContainer, #PlayContent, #AvailablePlateformContent, .Footer, #RS, #Credits, .Credits2
 {
     display: flex;
 }
@@ -59,15 +60,18 @@ html, body
 /* Barre de Navigation */
 #NavBarre
 {
-    gap: 8em;
+    /*gap: 8em;*/
 
-    font-size: 1.4em;
+    font-size: 1.2vw;
 }
 
 /* Puces éléments Barre de Navigation */
 .NavBarreElement
 {
     list-style-type: none;
+
+    margin-right: 4em;
+    margin-left: 4em;
 }
 
 /* Lien Barre de Navigation */
@@ -115,8 +119,34 @@ html, body
 /* Body */
 .MainContent
 {
-    display: flex;
     flex-direction: column;
+}
+
+.MainContentDivTitleContainer
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.MainContentDecoration
+{
+    height: 2em;
+    width: 2em;
+    background-color: #F7CCAC;
+    border-radius: 10%;
+    display: inline-block;
+    rotate: 45deg;
+}
+
+.MainContentDecoration2
+{
+    height: 0.3em;
+    width: 6em;
+    background-color: #F7CCAC;
+    border-radius: 1em;
+    display: inline-block;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 /* Bande Annonce */
@@ -128,6 +158,8 @@ html, body
 
 #Video
 {
+    height: 25em;
+    width: 44.5em; 
     filter: drop-shadow(0 0 0.5rem black);
 }
 
@@ -147,6 +179,53 @@ html, body
     margin-left: 5em;
     margin-right: 5em;
     margin-bottom: 5em;
+}
+
+#PlayContent
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.AvailablePlateform
+{
+    padding: 1em 2em;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
+    background: #826F66;
+}
+
+.AvailablePlateform:first-child
+{
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+}
+
+.AvailablePlateform:last-child
+{
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+
+.AvailablePlateform:link
+{
+    color: #EBFFEB;
+    text-decoration: none;
+}
+
+.AvailablePlateform:visited
+{
+    color: #EBFFEB;
+}
+
+.AvailablePlateform:hover
+{
+    background: #2C2C2C;
+}
+
+.AvailablePlateform:active
+{
+    color: #3A3845;
 }
 
 /* Footer */
