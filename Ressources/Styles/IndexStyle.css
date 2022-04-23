@@ -10,13 +10,13 @@ html, body
 .PageBackground
 {
     background-color: #3A3845;
-    background-image: url(../Ressources/Images/BackgroundPattern.png);
+    background-image: url(../Images/BackgroundPattern.png);
     background-attachment: fixed;
 }
 
 .ForegroundElementBackground
 {
-    background-color: #826F66;
+    background-color: #3D3D3D;
 }
 
 /* Règles Spécifiques */
@@ -192,7 +192,7 @@ html, body
     padding: 1em 2em;
     margin-right: 0.1em;
     margin-left: 0.1em;
-    background: #826F66;
+    background: #2C2C2C;
 }
 
 .AvailablePlateform:first-child
@@ -220,7 +220,7 @@ html, body
 
 .AvailablePlateform:hover
 {
-    background: #2C2C2C;
+    background: #826F66;
 }
 
 .AvailablePlateform:active
