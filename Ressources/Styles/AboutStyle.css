@@ -1,0 +1,231 @@
+/* Fichier CSS site web Azcogach's Quest */
+/* Règles générales */
+html, body 
+{
+    margin: 0;
+    font-family: "Rubik";
+    color: #D5E2D0;
+}
+
+.PageBackground
+{
+    background-color: #3A3845;
+    background-image: url(../Images/BackgroundPattern.png);
+    background-attachment: fixed;
+}
+
+.ForegroundElementBackground
+{
+    background-color: #3D3D3D;
+}
+
+/* Règles Spécifiques */
+.Header, #HeaderLogo, #NavBarre, #Langue, #MainContent, #Description, .DescriptionElement, #Tools, .Footer, #RS, #Credits, .Credits2
+{
+    display: flex;
+}
+
+/* Header */
+.Header
+{
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0em 0.5em 1em;
+}
+
+/* Header Logo */
+#HeaderLogo
+{
+    align-items: center;
+}
+
+#PartialLogo
+{
+    height: 3.5em;
+    width: auto;
+    margin-left: -2.85em;
+}
+
+#HeaderLogoBackground 
+{
+    height: 4em;
+    width: 4em;
+    background-color: #F7CCAC;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 4em;
+}
+
+/* Barre de Navigation */
+#NavBarre
+{
+    /*gap: 8em;*/
+
+    font-size: 1.2vw;
+}
+
+/* Puces éléments Barre de Navigation */
+.NavBarreElement
+{
+    list-style-type: none;
+
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+/* Lien Barre de Navigation */
+.NavBarreLink:link
+{
+    
+    color: #EBFFEB;
+    text-decoration: none;
+}
+
+.NavBarreLink:visited
+{
+    color: #EBFFEB;
+}
+
+.NavBarreLink:hover
+{
+    text-decoration: underline;
+}
+
+.NavBarreLink:active
+{
+    color: #3A3845;
+}
+
+/* Langue */
+#Langue
+{
+    gap: 0.3em;
+    margin-right: 2.5em;
+}
+
+#Drapeau
+{
+    width: 2em;
+    height: 2em;
+}
+
+#Sélecteur
+{
+    width: 1em;
+    height: 2em;
+}
+
+/* Body */
+#MainContent
+{
+    flex-direction: column;
+}
+
+#Description
+{
+    margin-top: 2.5em;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Description */
+.DescriptionElement:first-child
+{
+    margin-top: 2.5em;
+}
+
+.DescriptionElement:last-child
+{
+    margin-bottom: 2.5em;
+}
+
+.DescriptionElement
+{
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 1em;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DescIcone
+{
+    height: 5.5em;
+    width: auto;
+    margin-right: 1.5em;
+}
+
+.DescriptionText
+{
+    padding: 1em 2em;
+    background: #2C2C2C;
+    border-radius: 0.3em;
+}
+
+/* Tools */
+#Tools
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+.Footer
+{
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0em -0.5em 1em;
+}
+
+/* Logos */
+#FooterLogo
+{
+    width: 5em;
+    height: auto;
+}
+
+.RSLogo 
+{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#LogoGauche
+{
+    margin-right: 0.5em;
+}
+
+#LogoDroite
+{
+    margin-left: 0.5em;
+}
+
+/* Crédits */
+#Credits
+{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Credits2Top
+{
+    margin-bottom: 0;
+}
+
+.Credits2Bottom
+{
+    margin-top: 0.1em;
+}
+
+#Coeur, #Copyright
+{
+    font-family: "Inter";
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+}
