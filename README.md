@@ -50,3 +50,9 @@ This repository is the working repository of Azcogach Team on the Azcogach's Que
 - 23/04/2022 - Platon Neutron:
   - Finished to implement the about page
 <br></br>
+- 05/06/2022 - Platon Neutron:
+  - Big website update
+    - Adding some pfp in about section
+    - Implementing the gallery and wiki pages
+    - Implemnting the twitter link in the footer
+<br></br>
