@@ -19,6 +19,11 @@ html, body
     background-color: #3D3D3D;
 }
 
+.Cacher
+{
+    display: none;
+}
+
 /* Règles Spécifiques */
 .Header, #HeaderLogo, #NavBarre, #Langue, #BandeAnnonce, .MainContent, .MainContentDivTitleContainer, #PlayContent, #AvailablePlateformContent, .Footer, #RS, #Credits, .Credits2
 {
@@ -195,13 +200,13 @@ html, body
     background: #2C2C2C;
 }
 
-.AvailablePlateform:first-child
+.AvailablePlateform:not(.Cacher *):first-child
 {
     border-top-left-radius: 0.3em;
     border-bottom-left-radius: 0.3em;
 }
 
-.AvailablePlateform:last-child
+.AvailablePlateform:not(.Cacher *):last-child
 {
     border-top-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;

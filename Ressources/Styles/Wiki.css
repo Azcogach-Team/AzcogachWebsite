@@ -25,7 +25,7 @@ html, body
 }
 
 /* Règles Spécifiques */
-.Header, #HeaderLogo, #NavBarre, #Langue, #MainContent, .MainContentDivTitleContainer, #Description, .DescriptionElement, #Tools, #ToolsIcone, .Footer, #RS, #Credits, .Credits2
+.Header, #HeaderLogo, #NavBarre, #Langue, #BandeAnnonce, .MainContent, .MainContentDivTitleContainer, #PlayContent, #AvailablePlateformContent, .Footer, #RS, #Credits, .Credits2
 {
     display: flex;
 }
@@ -122,113 +122,18 @@ html, body
 }
 
 /* Body */
-#MainContent
+.MainContent
 {
-    flex-direction: column;
-}
-
-.MainContentDivTitleContainer
-{
-    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
     justify-content: center;
-    margin-bottom: 0.4em;
 }
 
-.MainContentDecoration
+#Soon
 {
-    height: 2em;
-    width: 2em;
-    background-color: #F7CCAC;
-    border-radius: 10%;
-    display: inline-block;
-    transform: rotate(45deg);
-}
-
-.MainContentDecoration2
-{
-    height: 0.3em;
-    width: 6em;
-    background-color: #F7CCAC;
-    border-radius: 1em;
-    display: inline-block;
-    margin-left: 3em;
-    margin-right: 3em;
-}
-
-.Content
-{
-    margin-top: 2.5em;
-}
-
-/* Description */
-#Description
-{
-    flex-direction: column;
-    align-items: center;
-}
-
-.DescriptionElement
-{
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 1em;
-
-    justify-content: space-between;
-    align-items: center;
-}
-
-.DescIcone
-{
-    height: 10em;
-    width: auto;
-    margin-right: 1.5em;
-}
-
-.DescriptionText
-{
-    padding: 0.2em 2em;
-    background: #2C2C2C;
-    border-radius: 0.3em;
-}
-
-/* Tools */
-#Tools
-{
-    flex-direction: column;
-    align-items: center;
-}
-
-#ToolsIcone
-{
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    flex-wrap: wrap;
-
-    margin-top: 0.7em;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 2.2em;
-}
-
-.ToolsIconeElement
-{
-    height: 5.5em;
-    width: auto;
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-}
-
-/* Story */
-.StoryText
-{
-    padding: 1em 2em;
-    background: #2C2C2C;
-    border-radius: 0.3em;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30em;
 }
 
 /* Footer */
