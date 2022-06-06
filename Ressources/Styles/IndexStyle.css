@@ -25,7 +25,7 @@ html, body
 }
 
 /* Règles Spécifiques */
-.Header, #HeaderLogo, #NavBarre, #Langue, #BandeAnnonce, .MainContent, .MainContentDivTitleContainer, #PlayContent, #AvailablePlateformContent, .Footer, #RS, #Credits, .Credits2
+.Header, #HeaderLogo, #NavBarre, #Langue, #BandeAnnonce, .MainContent, #Nouveauté, .MainContentDivTitleContainer, #PlayContent, #AvailablePlateformContent, .Footer, #RS, #Credits, .Credits2
 {
     display: flex;
 }
@@ -175,6 +175,9 @@ html, body
     margin-left: 5em;
     margin-right: 5em;
     margin-bottom: 2.5em;
+
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Jouer */
